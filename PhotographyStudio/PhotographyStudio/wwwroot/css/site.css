@@ -1,5 +1,11 @@
 ﻿body {
     background: url("../images/texture-wallpaper-23.jpg");
+    color: #c4c9d1;
+}
+
+img {
+    max-width:100%;
+    max-height: 100%;
 }
 
 /* Wrapping element */
@@ -10,16 +16,48 @@
     padding-top: 50px;
 }
 
-.strip {
-    margin-left: auto;
-    margin-right: auto;
+.box {
+    padding-bottom: 50px;
+}
+
+.line {
+    height: 105px;
+    white-space: nowrap;
+    width: 100%;
+    display: table;
+}
+
+.center {
+    text-align: center;
+    margin: 10px auto 20px;
+}
+
+.font {
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    color: #c4c9d1;
+}
+
+.head {
+    padding-top: 100px;
+    font-family: 'Satisfy', cursive;
+    font-size: 75px;
+    color: #c4c9d1;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #e3e7ed;
+    color: black;
+    border: 2px solid #bcc0c6;
+    padding: 10px 20px;
 }
 
 #container {
     width: 1000px;
     overflow: hidden;
     margin: 40px auto;
-    background: white;
+    /*background: white;*/
 }
 
 /*header*/
@@ -27,6 +65,7 @@
 header {
     width: 800px;
     margin: 40px auto;
+    color: #c4c9d1;
 }
 
     header h1 {
@@ -129,11 +168,6 @@ header {
 
 }
 
-.photobanner {
-    height: 233px;
-    width: 3550px;
-    margin-bottom: 80px;
-}
 
     .photobanner img {
         -webkit-transition: all 0.5s ease;
