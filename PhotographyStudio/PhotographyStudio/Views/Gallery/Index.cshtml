@@ -1,17 +1,17 @@
-﻿
+﻿@model  GalleryIndexViewModel
 @{
     ViewData["Title"] = "Index";
 }
 
 <div class="center line image">
     <div class="box">
-        <img src="https://picsum.photos/200/300" alt="" />
-        <img src="https://picsum.photos/300/300" alt="" />
-        <img src="https://picsum.photos/250/300" alt="" />
-        <img src="https://picsum.photos/350/300" alt="" />
+        @foreach (var photo in Model.SeniorsPhotos)
+        {
+            <img src="@photo" alt="Senior Photo" />
+        }
     </div>
     <div class="font">
-        Senior Portraits
+        @Model.SeniorsTitle
     </div>
     <div class="box">
         <button type="button" class="button">Open Gallery</button>
