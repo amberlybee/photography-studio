@@ -21,14 +21,7 @@ namespace PhotographyStudio.Controllers
         public IActionResult Index()
         {
             var model = _dbContext.Galleries.ToList();
-            //TODO: Install .NetCore 2.1 and include lazy loading
-
-            //GalleryIndexViewModel model = new GalleryIndexViewModel();
-            //model.SeniorsPhotos.Add("https://picsum.photos/200/300");
-            //model.SeniorsPhotos.Add("https://picsum.photos/300/300");
-            //model.SeniorsPhotos.Add("https://picsum.photos/250/300");
-            //model.SeniorsPhotos.Add("https://picsum.photos/350/300");
-            //model.SeniorsTitle = "Senior Portraits";
+       
             return View(model);
         }
 

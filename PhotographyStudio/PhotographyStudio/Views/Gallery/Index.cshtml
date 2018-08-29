@@ -10,7 +10,7 @@
         <div class="box">
             @foreach (var photo in gallery.Photos)
             {
-                <img src="@photo" alt="@gallery.Name Photo" />
+                <img src="@photo.Path" alt="@gallery.Name Photo" />
             }
         </div>
         <div class="font">
@@ -20,29 +20,4 @@
             <button type="button" class="button">Open Gallery</button>
         </div>
     }
-    <div class="box">
-        <img src="https://picsum.photos/225/300" alt="" />
-        <img src="https://picsum.photos/275/300" alt="" />
-        <img src="https://picsum.photos/325/300" alt="" />
-        <img src="https://picsum.photos/375/300" alt="" />
-    </div>
-    <div class="font">
-        Family Portraits
-    </div>
-    <div class="box">
-        <button type="button" class="button">Open Gallery</button>
-    </div>
-
-    <div class="box">
-        <img src="https://picsum.photos/200/300" alt="" />
-        <img src="https://picsum.photos/300/300" alt="" />
-        <img src="https://picsum.photos/250/300" alt="" />
-        <img src="https://picsum.photos/350/300" alt="" />
-    </div>
-    <div class="font">
-        Children and Baby Portraits
-    </div>
-    <div class="box">
-        <button type="button" class="button">Open Gallery</button>
-    </div>
 </div>
