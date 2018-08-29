@@ -1,22 +1,25 @@
-﻿@model  GalleryIndexViewModel
+﻿@model  IEnumerable<Gallery>
+
 @{
     ViewData["Title"] = "Index";
 }
 
 <div class="center line image">
-    <div class="box">
-        @foreach (var photo in Model.SeniorsPhotos)
-        {
-            <img src="@photo" alt="Senior Photo" />
-        }
-    </div>
-    <div class="font">
-        @Model.SeniorsTitle
-    </div>
-    <div class="box">
-        <button type="button" class="button">Open Gallery</button>
-    </div>
-
+    @foreach (var gallery in Model)
+    {
+        <div class="box">
+            @foreach (var photo in gallery.Photos)
+            {
+                <img src="@photo" alt="@gallery.Name Photo" />
+            }
+        </div>
+        <div class="font">
+            @gallery.Name
+        </div>
+        <div class="box">
+            <button type="button" class="button">Open Gallery</button>
+        </div>
+    }
     <div class="box">
         <img src="https://picsum.photos/225/300" alt="" />
         <img src="https://picsum.photos/275/300" alt="" />

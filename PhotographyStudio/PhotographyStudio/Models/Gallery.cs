@@ -5,6 +5,10 @@ namespace PhotographyStudio.Models
 {
     public class Gallery
     {
+        //public Gallery()
+        //{
+        //    Photos = new List<Photo>();
+        //}
         public int Id { get; set; }
 
         public string Name { get; set; }

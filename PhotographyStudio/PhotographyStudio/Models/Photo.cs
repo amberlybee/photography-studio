@@ -9,9 +9,9 @@ namespace PhotographyStudio.Models
         public string Path { get; set; }
         public string Alt { get; set; }
 
-        public int GalleryId { get; set; }
+        //public int GalleryId { get; set; }
 
-        [ForeignKey("GalleryId")]
+        //[ForeignKey("GalleryId")]
         public virtual Gallery Gallery { get; set; }
     }
 }
