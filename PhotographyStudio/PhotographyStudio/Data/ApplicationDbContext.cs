@@ -17,6 +17,7 @@ namespace PhotographyStudio.Data
 
         public DbSet<Gallery> Galleries { get; set; }
         public DbSet<Photo> Photos { get; set; }
+        public DbSet<GallerySession> GallerySessions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

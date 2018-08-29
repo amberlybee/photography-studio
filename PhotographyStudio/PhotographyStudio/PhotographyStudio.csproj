@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20180829040247_CreatedGallerySessionModel.cs" />
+    <Compile Remove="Migrations\20180829040247_CreatedGallerySessionModel.Designer.cs" />
+    <Compile Remove="Migrations\20180829041425_CreatedGallerySessionModel.cs" />
+    <Compile Remove="Migrations\20180829041425_CreatedGallerySessionModel.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.1.2" />
